@@ -26,7 +26,7 @@ while '_' in blanks and lives > 0:
     else:
         lives -= 1
         print(f'You guessed {guess}. It is not in a word.\n')
-   
+
 if lives == 0:
     print(STAGES[lives])
     print(f'You have lost. It was the word "{word}"')
