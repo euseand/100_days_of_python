@@ -1,7 +1,9 @@
 from utils import clear_message, caesar
-
+from constants import LOGO
 
 while True:
+    
+    print(LOGO)
 
     while True:
         action = input('Type "encode" to encrypt, type "decode" to decrypt:\n').lower()
