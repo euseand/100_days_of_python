@@ -5,7 +5,7 @@ from random import choice, shuffle, randint
 def generate_password(pass_length: int) -> str:
     """Generates a strong password accodring to length and typed chars amount"""
 
-    num_letters, num_digits = randint(10, 15), randint(10, 15)
+    num_letters, num_digits = randint(15, 20), randint(5, 10)
     num_punctuation = pass_length - num_letters - num_digits
 
     password = []
