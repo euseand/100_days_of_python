@@ -45,7 +45,7 @@ while True:
         
     
     while True:
-        end = input('Do you want to play again? Type "y" or "n".: ').lower()
+        end = input('Do you want to play again? Type "y" or "n": ').lower()
         if end not in {'y', 'n'}:
             print('Unknown action. Please try again.\n')
             continue
