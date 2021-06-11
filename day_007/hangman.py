@@ -32,7 +32,7 @@ while True:
         print(f'You have lost. It was the word "{word}"')
     else:
         print(f'You have won. It was the word "{word}"')
-    
+
     choice = input('\nLeave blank to exit or enter something to play again.')
     if not choice:
         break

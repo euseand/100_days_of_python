@@ -6,7 +6,7 @@ from constants import DATA
 
 while True:
     print('Welcome to the Higher Lower Game!\n')
-    
+
     score = 0
     while True:
         first = choice(DATA)
@@ -24,7 +24,8 @@ while True:
                 continue
             break
 
-        if first["follower_count"] > second["follower_count"] and guess == 'a' or first["follower_count"] < second["follower_count"] and guess == 'b':
+        if first["follower_count"] > second["follower_count"] and guess == 'a' or \
+                first["follower_count"] < second["follower_count"] and guess == 'b':
             score += 1
             system('clear')
             print(f'\nThat is right. Score: {score}')
@@ -33,8 +34,7 @@ while True:
             system('clear')
             print(f'\nSorry, that is wrong. Final score: {score}')
             break
-            
-        
+
     while True:
         end = input('Do you want to play again? Type "y" or "n": ').lower()
         if end not in {'y', 'n'}:

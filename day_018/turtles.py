@@ -29,6 +29,7 @@ def clear():
     turt.home()
     turt.pendown()
 
+
 scr.listen()
 scr.onkey(key='Up', fun=move_forward)
 scr.onkey(key='Down', fun=move_backward)

@@ -3,7 +3,8 @@ from random import choice
 
 def deal_card(cards):
     """Return randomly generated card from existing card list"""
-    return choice(cards) 
+    return choice(cards)
+
 
 def init_game(cards, player, dealer):
     """Deal two initial cards to each player"""

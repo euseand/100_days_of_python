@@ -2,7 +2,7 @@ from utils import clear_message, caesar
 from constants import LOGO
 
 while True:
-    
+
     print(LOGO)
 
     while True:

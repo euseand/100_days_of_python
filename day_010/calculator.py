@@ -3,7 +3,7 @@ from utils import calculate
 
 result = None
 
-while True:    
+while True:
 
     if not result:
         while True:
@@ -33,12 +33,13 @@ while True:
     print(f'{first} {operation} {second} = {result}')
 
     while True:
-        choice = input(f'Type "y" to continue calculating with {result}, or type "n" to start a new calculation. Leave blank to exit.\n').lower()
+        choice = input(f'Type "y" to continue calculating with {result}, '
+                       f'or type "n" to start a new calculation. Leave blank to exit.\n').lower()
         if choice not in {'y', 'n', ''}:
             print('Unknown action. Please try again.\n')
             continue
         break
-    
+
     if choice == 'n':
         result = None
     elif choice == 'y':

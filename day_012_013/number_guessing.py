@@ -7,7 +7,6 @@ while True:
     print(ART)
     print('Welcome to the Number Guessing Game!\nI am thinking of a number between 1 and 100.')
 
-    
     while True:
         difficulty = input('Chose a difficulty. Type "easy" or "hard": ').lower()
         if difficulty not in {'easy', 'hard'}:
@@ -42,8 +41,7 @@ while True:
             print(f'You got it! The answer was {number}')
             break
         tries -= 1
-        
-    
+
     while True:
         end = input('Do you want to play again? Type "y" or "n": ').lower()
         if end not in {'y', 'n'}:

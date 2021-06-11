@@ -11,7 +11,7 @@ while True:
 
     if start == 'n':
         break
-    
+
     player = []
     dealer = []
     cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
@@ -20,7 +20,7 @@ while True:
 
     print(f'\nYour hand is {player} = {sum(player)}\n')
     print(f'Dealer hand is {dealer} = {sum(dealer)}')
-    
+
     while sum(player) < 21:
         while True:
             choice = input('\nDo you want to have another card? Type "y" to deal another or "n" to stop.: ').lower()
@@ -39,12 +39,12 @@ while True:
 
     if sum(player) == 21:
         print('You got 21! Lucky one! Game is over.\n')
-        continue    
+        continue
     elif sum(player) > 21:
         print('\nYou have overdrawn! Better luck next time. Game is over. \n')
         continue
 
-    while sum(dealer) < 21:        
+    while sum(dealer) < 21:
         new_card = deal_card(cards)
         if sum(dealer) + new_card <= 21:
             print(f'\nDealer is taking another card.')
@@ -57,7 +57,7 @@ while True:
         print('Dealer got 21! Better luck next time! Game is over.\n')
         continue
 
-    if sum(player) > sum(dealer):        
+    if sum(player) > sum(dealer):
         print(f'\nYou have got {sum(player)} points. Dealer has {sum(dealer)}. You win!\n')
         continue
     else:
