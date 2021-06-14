@@ -1,0 +1,5 @@
+SCREEN_WIDTH = 725
+SCREEN_HEIGHT = 491
+
+BACKGROUND_IMAGE_PATH = './blank_states_img.gif'
+STATES_DATA_PATH = './50_states.csv'
