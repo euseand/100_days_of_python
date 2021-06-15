@@ -26,4 +26,3 @@ class StateManager:
         t.penup()
         t.goto(state[1], state[2])
         t.write(state[0])
-

@@ -7,8 +7,6 @@ from constants import SCREEN_WIDTH, SCREEN_HEIGHT, CAR_MOVE_DISTANCE, CAR_MOVE_I
 class CarManager:
     def __init__(self):
         self.cars = []
-        #for _ in range(100):
-        #    self.create_car()
         self.move_speed = 0.1
         self.move_distance = CAR_MOVE_DISTANCE
 
